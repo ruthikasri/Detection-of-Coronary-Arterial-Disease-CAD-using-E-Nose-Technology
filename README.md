@@ -1,6 +1,4 @@
 
-
-```markdown
 # 💓 Detection of Coronary Arterial Disease (CAD) using E-Nose Technology
 
 This project presents an innovative **IoT + Machine Learning** approach for detecting **Coronary Artery Disease (CAD)** by analyzing **Volatile Organic Compounds (VOCs)** from a patient’s breath using **Electronic Nose (E-Nose)** sensors.
@@ -102,7 +100,7 @@ MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML
 5. **Open Power BI**
 
    * Load `visualization/powerbi_dashboard.pbix` to view analytics.
-
+````
 ---
 
 ## 🧰 Repository Structure
@@ -133,7 +131,7 @@ E-Nose-CAD-Detection/
     ├── project_report.pdf
     ├── presentation_slides.pptx
     └── references.txt
-```
+````
 
 ---
 
