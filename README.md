@@ -1,9 +1,4 @@
 
-```
-# 💓 Detection of Coronary Arterial Disease (CAD) using E-Nose Technology
-
-This project presents an innovative **IoT + Machine Learning** approach for detecting **Coronary Artery Disease (CAD)** by analyzing **Volatile Organic Compounds (VOCs)** from a patient’s breath using **Electronic Nose (E-Nose)** sensors.
-
 ---
 
 ## 🩺 Overview
