@@ -85,10 +85,11 @@ MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML
    ````
 
 3. Upload firmware to ESP32:
-
+```bash
    * Open `firmware/esp32_code.ino` in **Arduino IDE**.
    * Configure your **Wi-Fi SSID**, **Password**, and **ThingSpeak API keys**.
    * Upload to the ESP32 board.
+````
 
 4. Run the ML model:
 
@@ -133,7 +134,7 @@ E-Nose-CAD-Detection/
 ---
 
 ## 🧩 **requirements.txt**
-
+```
 # Core Python Libraries
 numpy==1.26.4
 pandas==2.2.2
