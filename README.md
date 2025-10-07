@@ -1,4 +1,6 @@
-# Detection-of-Coronary-Arterial-Disease-CAD-using-E-Nose-Technology
+
+```markdown
+# 💓 Detection of Coronary Arterial Disease (CAD) using E-Nose Technology
 
 This project presents an innovative **IoT + Machine Learning** approach for detecting **Coronary Artery Disease (CAD)** by analyzing **Volatile Organic Compounds (VOCs)** from a patient’s breath using **Electronic Nose (E-Nose)** sensors.
 
@@ -6,13 +8,14 @@ This project presents an innovative **IoT + Machine Learning** approach for dete
 
 ## 🩺 Overview
 Coronary Artery Disease (CAD) is one of the leading causes of death worldwide.  
-This project proposes a **non-invasive diagnostic system** using semiconductor gas sensors (MQ-4 and MQ-7) and a microcontroller (ESP32) to analyze VOCs like **acetone, benzene, and toluene** exhaled in breath samples.
+This project proposes a **non-invasive diagnostic system** using semiconductor gas sensors (**MQ-4** and **MQ-7**) and a microcontroller (**ESP32**) to analyze VOCs like *acetone, benzene,* and *toluene* exhaled in breath samples.
 
-The VOC data is transmitted via Wi-Fi to the **ThingSpeak IoT cloud**, processed with **Python and Machine Learning**, and visualized in **Power BI** for CAD detection and trend prediction.
+The VOC data is transmitted via **Wi-Fi** to the **ThingSpeak IoT Cloud**, processed using **Python and Machine Learning**, and visualized in **Power BI** for CAD detection and trend prediction.
 
 ---
 
 ## ⚙️ System Architecture
+
 ```
 
 MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML Model → Power BI Visualization
@@ -37,70 +40,71 @@ MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML
 
 ## 🧠 Methodology
 
-1. **Data Acquisition**
-   - MQ-4 and MQ-7 sensors capture gas concentrations from breath samples.
-   - ESP32 converts analog sensor values into digital signals.
+### **1. Data Acquisition**
+- MQ-4 and MQ-7 sensors capture gas concentrations from breath samples.  
+- ESP32 converts analog sensor values into digital signals.
 
-2. **Data Transmission**
-   - ESP32 sends sensor data to **ThingSpeak Cloud** via Wi-Fi for storage and visualization.
+### **2. Data Transmission**
+- ESP32 sends sensor data to ThingSpeak Cloud via Wi-Fi for storage and visualization.
 
-3. **Machine Learning Analysis**
-   - A Python-based ML model classifies breath data into **CAD** or **Healthy** categories.
-   - Time series forecasting predicts upcoming trends in VOC levels.
+### **3. Machine Learning Analysis**
+- A Python-based ML model classifies breath data into **CAD** or **Healthy** categories.  
+- Time series forecasting predicts upcoming trends in VOC levels.
 
-4. **Visualization**
-   - **ThingSpeak** for real-time gas trends.
-   - **Power BI** for VOC analysis and CAD detection dashboards.
+### **4. Visualization**
+- ThingSpeak for real-time gas trends.  
+- Power BI for VOC analysis and CAD detection dashboards.
 
 ---
 
 ## 📈 Results
-- Real-time tracking of VOC gases (Acetone, Benzene, Toluene).
-- Power BI dashboards for patient data analytics.
-- Accurate classification between CAD and healthy samples using machine learning.
+- Real-time tracking of VOC gases (Acetone, Benzene, Toluene).  
+- Power BI dashboards for patient data analytics.  
+- Accurate classification between CAD and healthy samples using machine learning.  
 - Time series forecasting predicting disease progression trends.
 
 ---
 
 ## 🧩 Future Enhancements
 - Include more sensors (MQ-2, MQ-135) for expanded biomarker detection.  
-- Integrate advanced deep learning models for improved accuracy.  
-- Develop a web/mobile dashboard for patient monitoring and alerts.  
+- Integrate deep learning models for improved accuracy.  
+- Develop a web or mobile dashboard for patient monitoring and alerts.
 
 ---
 
 ## 🧾 How to Run Locally
 
-1. Clone the repository:
+1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/E-Nose-CAD-Detection.git
    cd E-Nose-CAD-Detection
 ````
 
-2. Install dependencies:
+2. **Install dependencies**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Upload firmware to ESP32:
+3. **Upload firmware to ESP32**
 
    * Open `firmware/esp32_code.ino` in **Arduino IDE**.
    * Configure your **Wi-Fi SSID**, **Password**, and **ThingSpeak API keys**.
    * Upload to the ESP32 board.
 
-4. Run the ML model:
+4. **Run the ML model**
 
    ```bash
    python ml_model/model_training.py
    ```
 
-5. Open Power BI and load `visualization/powerbi_dashboard.pbix` to view analytics.
+5. **Open Power BI**
+
+   * Load `visualization/powerbi_dashboard.pbix` to view analytics.
 
 ---
-```
 
-# 🧰 Repository Structure
+## 🧰 Repository Structure
 
 ```
 E-Nose-CAD-Detection/
@@ -130,8 +134,9 @@ E-Nose-CAD-Detection/
     └── references.txt
 ```
 
-## 🧩 requirements.txt
+---
 
+## 🧩 requirements.txt
 
 ```txt
 # Core Python Libraries
@@ -152,5 +157,6 @@ seaborn==0.13.2
 # Optional (for Power BI or API integrations)
 flask==3.0.3
 joblib==1.4.2
-````
+```
 
+---
