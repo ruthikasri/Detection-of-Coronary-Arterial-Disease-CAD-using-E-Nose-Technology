@@ -81,6 +81,7 @@ MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
+
 ````
 
 3. Upload firmware to ESP32:
@@ -91,13 +92,13 @@ MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML
 ````
 
 5. Run the ML model:
-
    ```bash
    python ml_model/model_training.py
+
 ````
 
 6. Open Power BI and load `visualization/powerbi_dashboard.pbix` to view analytics.
-````
+
 
 ````
 ---
