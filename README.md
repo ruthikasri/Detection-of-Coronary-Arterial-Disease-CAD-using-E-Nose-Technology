@@ -1,4 +1,6 @@
 
+
+```markdown
 # 💓 Detection of Coronary Arterial Disease (CAD) using E-Nose Technology
 
 This project presents an innovative **IoT + Machine Learning** approach for detecting **Coronary Artery Disease (CAD)** by analyzing **Volatile Organic Compounds (VOCs)** from a patient’s breath using **Electronic Nose (E-Nose)** sensors.
@@ -162,3 +164,7 @@ joblib==1.4.2
 
 ---
 
+If you want, I can also **make the README more GitHub-professional** by adding **badges, GIFs/images, and a nice Table of Contents**, so it looks like a polished project page.  
+
+Do you want me to do that next?
+```
