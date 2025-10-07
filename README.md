@@ -101,12 +101,12 @@ MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML
 
    * Load `visualization/powerbi_dashboard.pbix` to view analytics.
 
-``
+```
 
 ---
 
 
-## 🧰 Repository Structure
+## **🧰 Repository Structure**
 
 ```
 E-Nose-CAD-Detection/
@@ -135,10 +135,10 @@ E-Nose-CAD-Detection/
     ├── presentation_slides.pptx
     └── references.txt
 ```
-``
+```
 ---
 
-## 🧩 requirements.txt
+**## 🧩 requirements.txt**
 
 ```txt
 # Core Python Libraries
