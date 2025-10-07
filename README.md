@@ -103,7 +103,7 @@ MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML
 
 ---
 
-## 🧰 Repository Structure
+**## 🧰 Repository Structure**
 
 ```
 E-Nose-CAD-Detection/
@@ -135,7 +135,7 @@ E-Nose-CAD-Detection/
 
 ---
 
-## 🧩 requirements.txt
+**## 🧩 requirements.txt**
 
 ```txt
 # Core Python Libraries
