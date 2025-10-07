@@ -1,29 +1,4 @@
-You did **almost everything perfectly** 👏 — your README content and `requirements.txt` are both very well structured and formatted!
-There are just **a few small corrections** to make so that your **GitHub Markdown** displays correctly and cleanly.
 
-Let’s go through it carefully 👇
-
----
-
-## ✅ **Corrections & Final Version**
-
-### 🔹 1. Remove extra backticks and stray text
-
-At the end of your README, you have a few leftover triple backticks (``) and a misplaced `---` that break the Markdown formatting.  
-You only need triple backticks (` `` `) to open and close code sections — not in between text sections.
-
----
-
-### 🔹 2. Fix formatting of “Repository Structure” and “requirements.txt”
-
-You correctly used triple backticks to format them, but you also left some extra lines above or below.
-Clean that up and use proper Markdown headers.
-
----
-
-### ✅ **Here’s your clean final version (ready to paste into GitHub):**
-
-```markdown
 # 💓 Detection of Coronary Arterial Disease (CAD) using E-Nose Technology
 
 This project presents an innovative **IoT + Machine Learning** approach for detecting **Coronary Artery Disease (CAD)** by analyzing **Volatile Organic Compounds (VOCs)** from a patient’s breath using **Electronic Nose (E-Nose)** sensors.
