@@ -70,34 +70,37 @@ MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML
 
 ---
 
+
 ## 🧾 How to Run Locally
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/E-Nose-CAD-Detection.git
-   cd E-Nose-CAD-Detection
-````
+1. **Clone the repository:**
 
-2. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ````
-
-3. Upload firmware to ESP32:
 ```bash
+git clone https://github.com/ruthikasri/Detection-of-Coronary-Artial-Disease-CAD-using-E-Nose-Technology.git
+cd Detection-of-Coronary-Artial-Disease-CAD-using-E-Nose-Technology
+```
+
+2. **Install dependencies:**
+
+```bash
+pip install -r requirements.txt
+```
+
+3. **Upload firmware to ESP32:**
+
    * Open `firmware/esp32_code.ino` in **Arduino IDE**.
    * Configure your **Wi-Fi SSID**, **Password**, and **ThingSpeak API keys**.
-   * Upload to the ESP32 board.
-````
+   * Upload the code to the ESP32 board.
 
-4. Run the ML model:
+4. **Run the ML model:**
 
-   ```bash
-   python ml_model/model_training.py
-   ```
+```bash
+python ml_model/model_training.py
+```
 
-5. Open Power BI and load `visualization/powerbi_dashboard.pbix` to view analytics.
+5. **Open Power BI**
+
+   * Load `visualization/powerbi_dashboard.pbix` to view analytics.
 
 ---
 
