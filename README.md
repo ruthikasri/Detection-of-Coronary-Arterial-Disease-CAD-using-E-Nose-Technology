@@ -82,7 +82,7 @@ MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML
 
    ```bash
    pip install -r requirements.txt
-   ````
+   ```
 
 3. Upload firmware to ESP32:
 ```bash
