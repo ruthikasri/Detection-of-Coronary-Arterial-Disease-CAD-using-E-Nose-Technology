@@ -1,4 +1,6 @@
+Sure! Here's your **corrected README.md code** with proper headings, repository structure, and requirements formatting. You can directly use this in your GitHub repo:
 
+```markdown
 # 💓 Detection of Coronary Arterial Disease (CAD) using E-Nose Technology
 
 This project presents an innovative **IoT + Machine Learning** approach for detecting **Coronary Artery Disease (CAD)** by analyzing **Volatile Organic Compounds (VOCs)** from a patient’s breath using **Electronic Nose (E-Nose)** sensors.
@@ -39,18 +41,18 @@ MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML
 
 ## 🧠 Methodology
 
-### **1. Data Acquisition**
+### 1. Data Acquisition
 - MQ-4 and MQ-7 sensors capture gas concentrations from breath samples.  
 - ESP32 converts analog sensor values into digital signals.
 
-### **2. Data Transmission**
+### 2. Data Transmission
 - ESP32 sends sensor data to ThingSpeak Cloud via Wi-Fi for storage and visualization.
 
-### **3. Machine Learning Analysis**
+### 3. Machine Learning Analysis
 - A Python-based ML model classifies breath data into **CAD** or **Healthy** categories.  
 - Time series forecasting predicts upcoming trends in VOC levels.
 
-### **4. Visualization**
+### 4. Visualization
 - ThingSpeak for real-time gas trends.  
 - Power BI for VOC analysis and CAD detection dashboards.
 
@@ -101,12 +103,9 @@ MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML
 
    * Load `visualization/powerbi_dashboard.pbix` to view analytics.
 
-```
-
 ---
 
-
-## **🧰 Repository Structure**
+## 🧰 Repository Structure
 
 ```
 E-Nose-CAD-Detection/
@@ -135,10 +134,10 @@ E-Nose-CAD-Detection/
     ├── presentation_slides.pptx
     └── references.txt
 ```
-```
+
 ---
 
-**## 🧩 requirements.txt**
+## 🧩 requirements.txt
 
 ```txt
 # Core Python Libraries
@@ -161,4 +160,7 @@ flask==3.0.3
 joblib==1.4.2
 ```
 
+```
+
 ---
+
