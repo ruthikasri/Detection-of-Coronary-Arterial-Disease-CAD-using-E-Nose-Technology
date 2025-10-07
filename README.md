@@ -79,32 +79,28 @@ MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML
 ````
 
 2. Install dependencies:
-   ``bash
-   pip install -r requirements.txt
 
-````
+   ```bash
+   pip install -r requirements.txt
+   ````
 
 3. Upload firmware to ESP32:
-   ```bash
+
    * Open `firmware/esp32_code.ino` in **Arduino IDE**.
    * Configure your **Wi-Fi SSID**, **Password**, and **ThingSpeak API keys**.
    * Upload to the ESP32 board.
-```
 
-5. Run the ML model:
-   ``bash
+4. Run the ML model:
+
+   ```bash
    python ml_model/model_training.py
+   ```
 
-```
+5. Open Power BI and load `visualization/powerbi_dashboard.pbix` to view analytics.
 
-6. Open Power BI and load `visualization/powerbi_dashboard.pbix` to view analytics.
-
-
-````
 ---
 
 ## 🧰 Repository Structure
-
 ```
 E-Nose-CAD-Detection/
 │
@@ -133,12 +129,11 @@ E-Nose-CAD-Detection/
     └── references.txt
 
 ````
+
 ---
 
 ## 🧩 **requirements.txt**
 
-
-```txt
 # Core Python Libraries
 numpy==1.26.4
 pandas==2.2.2
