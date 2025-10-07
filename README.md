@@ -99,7 +99,7 @@ MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML
 
 ---
 
-## 🧰 Repository Structure
+# 🧰 Repository Structure
 
 ```
 E-Nose-CAD-Detection/
@@ -129,33 +129,6 @@ E-Nose-CAD-Detection/
     └── references.txt
 ```
 
----
-
-## 👩‍💻 Contributor
-
-**Ruthika Sri C M**
-Department of Biomedical Engineering
-**Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College**, Chennai, India
-📧 *[[youremail@example.com](mailto:youremail@example.com)]*
-
----
-
-## 📚 Reference
-
-Based on the research paper:
-**“Detection of Coronary Arterial Disease Using E-Nose Technology”**
-Vel Tech Multi Tech, 2023.
-
----
-
-## 🪪 License
-
-This project is licensed under the [MIT License](LICENSE).
-
-````
-
----
-
 ## 🧩 **requirements.txt**
 
 Save this as `requirements.txt` in the same folder as your README:
@@ -181,20 +154,3 @@ flask==3.0.3
 joblib==1.4.2
 ````
 
----
-
-✅ **Next Step:**
-
-1. Copy both files (`README.md` + `requirements.txt`) into your project folder.
-2. Commit and push them to your GitHub repository:
-
-   ```bash
-   git add README.md requirements.txt
-   git commit -m "Added README and dependencies for E-Nose CAD Detection"
-   git push origin main
-   ```
-
----
-
-Would you like me to generate a matching **MIT License file** and **.gitignore** (for Python + Arduino projects) next?
-They make your repository look professional and clean.
