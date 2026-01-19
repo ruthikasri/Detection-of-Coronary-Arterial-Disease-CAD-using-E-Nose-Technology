@@ -76,7 +76,7 @@ Coronary Arterial Disease (CAD) is one of the leading causes of death worldwide.
 
 ```
 CAD-Detection-Using-E-Nose/
-│   |__ Block Diagra.png
+│   |__ Block Diagram.png
 |   |__ Circuit Diagram.png
 |
 ├── Arduino_Code/
