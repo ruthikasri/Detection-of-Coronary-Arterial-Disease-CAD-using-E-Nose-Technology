@@ -1,159 +1,172 @@
+# 🫀 Detection of Coronary Arterial Disease (CAD) Using E-Nose Technology
 
-# 💓 Detection of Coronary Arterial Disease Using E-Nose Technology
-
-This project presents an innovative **IoT + Machine Learning** approach for detecting **Coronary Artery Disease (CAD)** by analyzing **Volatile Organic Compounds (VOCs)** from a patient’s breath using **Electronic Nose (E-Nose)** sensors.
-
----
-
-## 🩺 Overview
-Coronary Artery Disease (CAD) is one of the leading causes of death worldwide.  
-This project proposes a **non-invasive diagnostic system** using semiconductor gas sensors (MQ-4 and MQ-7) and a microcontroller (ESP32) to analyze VOCs like **acetone, benzene, and toluene** exhaled in breath samples.
-
-The VOC data is transmitted via Wi-Fi to the **ThingSpeak IoT cloud**, processed with **Python and Machine Learning**, and visualized in **Power BI** for CAD detection and trend prediction.
+An **IoT and Machine Learning based healthcare project** that detects the risk level of **Coronary Arterial Disease (CAD)** using breath analysis data from MQ gas sensors, cloud connectivity, and real-time mobile visualization.
 
 ---
 
-## ⚙️ System Architecture
+## 📌 Project Overview
+
+Coronary Arterial Disease (CAD) is one of the leading causes of death worldwide. Early detection plays a crucial role in prevention and management. This project proposes a **non-invasive, cost-effective CAD screening system** using:
+
+* Electronic Nose (E-Nose) concept
+* IoT (ESP32 + Firebase)
+* Machine Learning (KNN)
+* Cloud Dashboard (Adafruit IO)
+* Android Mobile App (MIT App Inventor)
+
+---
+
+## 🎯 Objectives
+
+* To collect breath-based gas sensor data using MQ sensors
+* To transmit real-time sensor data to the cloud
+* To classify CAD risk levels using a Machine Learning model
+* To visualize results on a dashboard and Android application
+* To provide automated health prescriptions based on prediction
+
+---
+
+## 🧠 System Architecture
+
+1. **Hardware Layer**
+
+   * ESP32 Microcontroller
+   * MQ Gas Sensor 1 (MQ1)
+   * MQ Gas Sensor 2 (MQ2)
+
+2. **Cloud Layer**
+
+   * Firebase Realtime Database (data storage & communication)
+
+3. **Machine Learning Layer**
+
+   * Python-based KNN classifier
+
+4. **Visualization Layer**
+
+   * Adafruit IO Dashboard (live graphs & status)
+   * Android App (MIT App Inventor)
+
+---
+
+## 🛠 Technologies Used
+
+### Hardware
+
+* ESP32
+* MQ Series Gas Sensors
+
+### Software & Tools
+
+* Arduino IDE
+* Python
+* Firebase Realtime Database
+* Adafruit IO
+* MIT App Inventor
+
+### Machine Learning
+
+* Scikit-learn
+* K-Nearest Neighbors (KNN)
+* Pandas, NumPy
+
+---
+
+## 📂 Project Structure
+
 ```
-
-MQ-4 / MQ-7 Sensors → ESP32 Microcontroller → ThingSpeak Cloud → Python ML Model → Power BI Visualization
-
-````
-
----
-
-## 🧩 Tech Stack
-
-| Layer | Technologies Used |
-|--------|-------------------|
-| **Sensors** | MQ-4 (Methane, Toluene), MQ-7 (Carbon Monoxide) |
-| **Microcontroller** | ESP32 with Wi-Fi & Bluetooth |
-| **Programming Languages** | Python, C++ (Arduino IDE) |
-| **IoT Platform** | ThingSpeak Cloud |
-| **Machine Learning** | Scikit-learn, NumPy, Pandas |
-| **Visualization** | Power BI, ThingSpeak Charts |
-| **Forecasting** | Time Series Analysis (Python) |
-
----
-
-## 🧠 Methodology
-
-1. **Data Acquisition**
-   - MQ-4 and MQ-7 sensors capture gas concentrations from breath samples.
-   - ESP32 converts analog sensor values into digital signals.
-
-2. **Data Transmission**
-   - ESP32 sends sensor data to **ThingSpeak Cloud** via Wi-Fi for storage and visualization.
-
-3. **Machine Learning Analysis**
-   - A Python-based ML model classifies breath data into **CAD** or **Healthy** categories.
-   - Time series forecasting predicts upcoming trends in VOC levels.
-
-4. **Visualization**
-   - **ThingSpeak** for real-time gas trends.
-   - **Power BI** for VOC analysis and CAD detection dashboards.
-
----
-
-## 📈 Results
-- Real-time tracking of VOC gases (Acetone, Benzene, Toluene).
-- Power BI dashboards for patient data analytics.
-- Accurate classification between CAD and healthy samples using machine learning.
-- Time series forecasting predicting disease progression trends.
-
----
-
-## 🧩 Future Enhancements
-- Include more sensors (MQ-2, MQ-135) for expanded biomarker detection.  
-- Integrate advanced deep learning models for improved accuracy.  
-- Develop a web/mobile dashboard for patient monitoring and alerts.  
-
----
-
-
-## 🧾 How to Run Locally
-
-1. **Clone the repository:**
-
-```bash
-git clone https://github.com/ruthikasri/Detection-of-Coronary-Artial-Disease-CAD-using-E-Nose-Technology.git
-cd Detection-of-Coronary-Artial-Disease-CAD-using-E-Nose-Technology
-```
-
-2. **Install dependencies:**
-
-```bash
-pip install -r requirements.txt
-```
-
-3. **Upload firmware to ESP32:**
-
-   * Open `firmware/esp32_code.ino` in **Arduino IDE**.
-   * Configure your **Wi-Fi SSID**, **Password**, and **ThingSpeak API keys**.
-   * Upload the code to the ESP32 board.
-
-4. **Run the ML model:**
-
-```bash
-python ml_model/model_training.py
-```
-
-5. **Open Power BI**
-
-   * Load `visualization/powerbi_dashboard.pbix` to view analytics.
-
----
-
-## 🧰 Repository Structure
-```
-E-Nose-CAD-Detection/
+CAD-Detection-Using-E-Nose/
+│   |__ Block Diagra.png
+|   |__ Circuit Diagram.png
+|
+├── Arduino_Code/
+│   └── esp32_mq_firebase.ino
 │
-├── README.md
-├── requirements.txt
-├── firmware/
-│   ├── esp32_code.ino
-│   └── thingspeak_config.txt
-├── ml_model/
-│   ├── model_training.py
-│   ├── model.pkl
-│   └── signal_processing.py
-├── visualization/
-│   ├── powerbi_dashboard.pbix
-│   ├── timeseries_forecasting.py
-│   └── screenshots/
-│       ├── acetone_graph.png
-│       ├── benzene_graph.png
-│       └── toluene_graph.png
-├── data/
-│   ├── cad_samples.csv
-│   └── healthy_samples.csv
-└── docs/
-    ├── project_report.pdf
-    ├── presentation_slides.pptx
-    └── references.txt
-
-````
+├── Python_ML/
+│   ├── pred.py
+│   └── mq_dual_sensor_dataset.xlsx
+│
+├── Mobile_App/
+│   └── CAD_Detection_App.apk
+│
+├── Dashboard_Screenshots/
+│   └── adafruit_dashboard.png
+│
+└── README.md
+```
 
 ---
 
-## 🧩 **requirements.txt**
-```
-# Core Python Libraries
-numpy==1.26.4
-pandas==2.2.2
-scikit-learn==1.5.0
-matplotlib==3.9.0
+## ⚙️ Working Methodology
 
-# IoT and Data Processing
-requests==2.32.3
-json5==0.9.14
+1. MQ sensors capture breath VOC values
+2. ESP32 reads sensor data and uploads it to Firebase
+3. Python script fetches live data from Firebase
+4. KNN model predicts CAD risk level:
 
-# Visualization & Forecasting
-plotly==5.23.0
-statsmodels==0.14.2
-seaborn==0.13.2
+   * **Normal**
+   * **Need Consideration**
+   * **Severe**
+5. Prediction & prescription are:
 
-# Optional (for Power BI or API integrations)
-flask==3.0.3
-joblib==1.4.2
-````
+   * Sent to Adafruit IO dashboard
+   * Displayed in Android mobile application
+
+---
+
+## 📊 Output Results
+
+* Live sensor graphs on Adafruit IO
+* CAD status display (Normal / Need Consideration / Severe)
+* Auto-generated health prescription
+* Android APK showing results in real time
+
+---
+
+## 📱 Mobile Application
+
+* Developed using **MIT App Inventor**
+* Fetches data from Firebase
+* Displays CAD result and health advice
+* Simple and user-friendly UI
+
+---
+
+## 🧪 Machine Learning Model
+
+* Algorithm: **K-Nearest Neighbors (KNN)**
+* Input features: MQ1, MQ2 values
+* Output labels: CAD risk categories
+* Dataset: Custom dual MQ sensor dataset
+
+---
+
+## ⚠️ Disclaimer
+
+This system is intended **only for preliminary screening and educational purposes**. It is **not a substitute for professional medical diagnosis**.
+
+---
+
+## 🚀 Future Enhancements
+
+* Integration of ECG / SpO₂ sensors
+* Use of advanced ML models (SVM, Random Forest)
+* Mobile app with patient history
+* Clinical data validation
+
+---
+
+## 👩‍💻 Author
+
+**Ruthika Sri**
+B.E – Electronics and Communication Engineering
+
+---
+
+## ⭐ Acknowledgment
+
+Thanks to open-source IoT platforms and ML libraries that made this project possible.
+
+---
+
+⭐ *If you like this project, don’t forget to star the repository!*
